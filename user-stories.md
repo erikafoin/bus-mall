@@ -11,8 +11,8 @@
 
 #H2 Marketing Team members
 
-*Eric is the marketing team manager and he is concerned that his products are too quirky. He needs to see quickly which items are generating very little interest.
+*Eric is the marketing team manager and he is concerned that his products are too quirky. He needs to see quickly which items are generating very little interest so he can kill certain items that are not performing well.
 
-*Nicolas is the social media manager and needs to follow trends quickly and easily. He needs an hour-by-hour chart of which products were clicked and by which demographic groups, by age.
+*Nicolas is the social media manager and needs to follow trends quickly and easily. He needs an hour-by-hour chart of which products were clicked and by which demographic groups, by age, so he can adjust his social media strategy accordingly.
 
 *Annika is the new product manager and is very excited about all of the products. She needs data that will prove to her team that they are headed down the right path in terms of product selection.

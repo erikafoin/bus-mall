@@ -52,5 +52,90 @@ export const productData = [
         id: 'cthulhu',
         name: 'Cthulhu',
         image: '../assets/cthulhu.jpg',
-        description: 'The perfect marriage between two round items of goodness.'
+        description: 'Everyone needs a green demon of darkness on their desktop. Why should you be any different?'
     },
+
+    {
+        id: 'dog-duck',
+        name: 'Dog Duck',
+        image: '../assets/dog-duck.jpg',
+        description: 'Fulfill the most deeply-held fantasies that your dog has ever dreamed of and get him all the ladies he ever wanted.'
+    },
+
+    {
+        id: 'dragon',
+        name: 'Dragon Meat',
+        image: '../assets/dragon.jpg',
+        description: 'Mmmm, dragon meat. Need I say more?'
+    },
+
+    {
+        id: 'pen',
+        name: 'Pen Utensils',
+        image: '../assets/pen.jpg',
+        description: 'Write and eat at the same time? Sign me up!'
+    },
+
+    {
+        id: 'pet-sweep',
+        name: 'Pet Sweep',
+        image: '/assets/pet-sweep.jpg',
+        description: 'Put that lazy dog to use around the house.'
+    },
+
+    {
+        id: 'scissors',
+        name: 'Pizza Scissors',
+        image: '/assets/cthulhu.jpg',
+        description: 'Does your pizza cutter have you dreaming of a better way? That better way is here.'
+    },
+
+    {
+        id: 'shark',
+        name: 'Shark Sleeping Bag',
+        image: '/assets/shark.jpg',
+        description: 'Have you ever dreamed of being digested while sleeping? That dream is about to become a reality.'
+    },
+
+    {
+        id: 'baby-sweep',
+        name: 'Baby Sweep',
+        image: '/assets/pet-sweep.jpg',
+        description: 'Put that lazy baby to use around the house.'
+    },
+
+    {
+        id: 'tauntaun',
+        name: 'Tauntaun Sleeping Bag',
+        image: '/assets/tauntaun.jpg',
+        description: 'Have you ever dreamed of sleeping in a dead animal? That dream is about to become a reality.'
+    },
+
+    {
+        id: 'unicorn',
+        name: 'Unicorn Meat',
+        image: '/assets/unicorn.jpg',
+        description: 'Mmmm, unicorn meat. Need I say more?'
+    },
+
+    {
+        id: 'usb',
+        name: 'USB Tentatcle',
+        image: '/assets/usb.gif',
+        description: 'Animate your computer life with a living USB port.'
+    },
+
+    {
+        id: 'water-can',
+        name: 'Watering Can',
+        image: '/assets/water-can.jpg',
+        description: 'Engage in a literal Escherian exercise with this can that waters itself.'
+    },
+
+    {
+        id: 'wine-glass',
+        name: 'Wine Glass',
+        image: '/assets/wine-glass.jpg',
+        description: 'How much do you REALLY want that wine? Great for alcoholics.'
+    },
+];
