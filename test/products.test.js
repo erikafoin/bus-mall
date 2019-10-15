@@ -35,7 +35,7 @@ test('retrieve products', function(assert) {
     const expected = 20;
         
     const productList = products.length;
-console.log(products);
+
     assert.equal(productList, expected);
 });
 

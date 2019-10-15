@@ -6,10 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>BusMall</title>
 </head>
 
 <body>
+    <header>
+        <h1>BusMall</h1>
+    </header>
+
+    <main>
+        <section id="display">
+            <h2 id="product-name"></h2>
+            <div id="product-choice-container">
+                <label class=item-one>
+                    <input type="radio" name="product" value="">
+                    <img src="">
+                </label>
+                <label class=item-two>
+                    <input type="radio" name="product" value="">
+                    <img src="">
+                </label>
+                <label class=item-three>
+                    <input type="radio" name="product" value="">
+                    <img src="">
+                </label>
+            </div>
+            <p id="next-container" class="hidden">
+                <button id="next-button">Next Selection</button>
+            </p>
+
+        </section>
+    </main>
 
     <script type="module" src="app.js"></script>
 </body>
