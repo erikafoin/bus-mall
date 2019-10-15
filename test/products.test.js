@@ -20,13 +20,33 @@ test('Retrieve products by id', function(assert) {
 });
 
 test('remove product by ID', function(assert) {
-console.log(productData.hasAnyProducts());
+
     const id = 'banana-slicer';
     const expected = null;
     
     const removedProduct = productData.removeProductById(id);
-    console.log(productData.hasAnyProducts());
+
     assert.equal(removedProduct, expected);
+});
+
+test('retrieve products', function(assert) {
+
+    const quantity = 20;
+    const expected = 20;
+        
+    const productList = products.length;
+console.log(products);
+    assert.equal(productList, expected);
+});
+
+test('has any products', function(assert) {
+
+    const quantity = 20;
+    const expected = 20;
+        
+    const productList = products.length;
+
+    assert.equal(productList, expected);
 });
 // test('get product by votes', function(assert) {
 //     //Arrange
