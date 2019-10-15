@@ -10,7 +10,7 @@ Overall plan for BusMall Project
 4. Generate functions for tracking results in results.js
     1. GetProductByVotes (increment times clicked)
     2. RemoveProductsNotClicked (remove any that were not selected)
-    3. GetProductsByDisplay (increment times shown)
+    3. GetProductsByDisplayed (increment times shown)
 4. Edit images to be equal sizes.
 5. Create HTML for product page at index.html
 6. CSS styling for product page at style.css

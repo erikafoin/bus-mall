@@ -1,16 +1,70 @@
-// IMPORT MODULES under test here:
-// import example from '../src/example.js';
+import { productData as products } from '../products.js';
+import { ProductData } from '../api.js';
+const productData = new ProductData(products); //now all tests have the data
 
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
+test('Retrieve products by id', function(assert) {
 
-    //Act 
-    // Call the function you're testing and set the result to a const
+    const id = 'banana-slicer';
+    const expected = {
+        id: 'banana-slicer',
+        name: 'Banana Slicer',
+        image: '../assets/banana.jpg',
+        description: 'Slice your long fruits into perfectly even coins with this plastic gadget of wonder.'
+    };
+    
+    const foundProduct = productData.getProductById(id);
 
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(true, false);
+    assert.deepEqual(foundProduct, expected);
 });
+
+test('remove product by ID', function(assert) {
+
+    const id = 'banana-slicer';
+    const expected = {
+        id: 'banana-slicer',
+        name: 'Banana Slicer',
+        image: '../assets/banana.jpg',
+        description: 'Slice your long fruits into perfectly even coins with this plastic gadget of wonder.'
+    };
+    
+    const removedProduct = productData.removeProductById(id);
+    console.log(removedProduct);
+    assert.deepEqual(removedProduct, expected);
+});
+// test('get product by votes', function(assert) {
+//     //Arrange
+//     // Set up your parameters and expectations
+
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+
+//     //Assert
+//     // Make assertions about what is expected valid result
+//     assert.equal(true, false);
+// });
+
+// test('remove products not clicked', function(assert) {
+//     //Arrange
+//     // Set up your parameters and expectations
+
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+
+//     //Assert
+//     // Make assertions about what is expected valid result
+//     assert.equal(true, false);
+// });
+
+// test('get products displayed to user', function(assert) {
+//     //Arrange
+//     // Set up your parameters and expectations
+
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+
+//     //Assert
+//     // Make assertions about what is expected valid result
+//     assert.equal(true, false);
+// });
