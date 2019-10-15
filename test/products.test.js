@@ -1,5 +1,5 @@
 import { productData as products } from '../products.js';
-import { ProductData } from '../api.js';
+import { ProductData } from '../productArray.js';
 const productData = new ProductData(products); //now all tests have the data
 
 const test = QUnit.test;
