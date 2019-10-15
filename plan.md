@@ -7,5 +7,5 @@ Overall plan for BusMall Project
     3. DoesProductExist
     4. GetRandomProduct
 3. Create tests for each function in products.test.js
-4. Create HTML for product page
-5. CSS styling for product page
+4. Create HTML for product page at index.html
+5. CSS styling for product page at style.css
