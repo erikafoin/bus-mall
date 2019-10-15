@@ -20,18 +20,13 @@ test('Retrieve products by id', function(assert) {
 });
 
 test('remove product by ID', function(assert) {
-
+console.log(productData.hasAnyProducts());
     const id = 'banana-slicer';
-    const expected = {
-        id: 'banana-slicer',
-        name: 'Banana Slicer',
-        image: '../assets/banana.jpg',
-        description: 'Slice your long fruits into perfectly even coins with this plastic gadget of wonder.'
-    };
+    const expected = null;
     
     const removedProduct = productData.removeProductById(id);
-    console.log(removedProduct);
-    assert.deepEqual(removedProduct, expected);
+    console.log(productData.hasAnyProducts());
+    assert.equal(removedProduct, expected);
 });
 // test('get product by votes', function(assert) {
 //     //Arrange
