@@ -34,3 +34,10 @@ export class ProductData {
         return this.products[randomProductIndex];
     }
 }
+    // trackClicks() {
+    //     const found = this.getProductById(products);
+    //     if (found) {
+    //         found.add++;
+    //         return;
+    //     }
+    // }

@@ -16,8 +16,10 @@ let randomProduct3 = products.getRandomProducts();
 
 let totalClicks = 0;
 let live = true;
+const clickArray = [];
+const shownArray = [];
 
-// const masterProductSet = new ProductSet(products);
+// const masterProductData = new ProductData(products);
 
 // const handleUserChoice = (event) => {
 //     if (!live) return;
@@ -29,7 +31,7 @@ let live = true;
 
 //     const userChoice = products.id === radioElement.value;
 
-//     if (userChoice) {
+//     else (userChoice) {
 //         masterProductSet.addById(userChoice.id);
 //     }
 
@@ -60,14 +62,23 @@ img1.src = randomProduct1.image;
 img2.src = randomProduct2.image;
 img3.src = randomProduct3.image;
 
+// const radioButtonClickHandler = 
         
 productRadioTags.forEach((radioTag, i) => {
     if (i === 0) {
         radioTag.value = randomProduct1.id;
+        radioTag.addEventListener('click', (event) => {
+            const radioValue = event.target.value;
+        });
     } else if (i === 1) {
         radioTag.value = randomProduct2.id;
+        radioTag.addEventListener('click', (event) => {
+            const radioValue = event.target.value;
+        });
     } else if (i === 2) {
         radioTag.value = randomProduct3.id;
+        radioTag.addEventListener('click', (event) => {
+            const radioValue = event.target.value;
+        });
     }
-    console.log(radioTag.value);
 });
