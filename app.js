@@ -11,6 +11,13 @@ let randomProduct1 = products.getRandomProducts();
 let randomProduct2 = products.getRandomProducts(); 
 let randomProduct3 = products.getRandomProducts();
 
+// productRadioTags.forEach(radioTag) => {
+//     radioTag.addEventListener('click', (event)) => {
+//         if (event.target.value === productID) {
+//             myVotes++;
+//         }
+//     }
+// }
 while (randomProduct1 === randomProduct2) {
     randomProduct2 = products.getRandomProducts();
 }
