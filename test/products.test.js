@@ -10,8 +10,7 @@ test('Retrieve products by id', function(assert) {
     const expected = {
         id: 'banana-slicer',
         name: 'Banana Slicer',
-        image: 'bus-mall/assets/banana.jpg',
-        description: 'Slice your long fruits into perfectly even coins with this plastic gadget of wonder.'
+        image: 'bus-mall/assets/banana.jpg'
     };
     
     const foundProduct = productData.getProductById(id);

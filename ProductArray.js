@@ -17,13 +17,11 @@ export class ProductData {
     
     getProductById(someId) {
         let productMatch;
-    
         this.products.forEach(product => {
             if (someId === product.id) {
                 productMatch = product;
             }
         });
-    
         return productMatch;
     }
     
@@ -33,7 +31,6 @@ export class ProductData {
     
     getRandomProducts() {
         const randomProductIndex = Math.floor(Math.random() * this.products.length);
-    
         return this.products[randomProductIndex];
     }
 }
