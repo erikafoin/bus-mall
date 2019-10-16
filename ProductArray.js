@@ -15,9 +15,9 @@ export class ProductData {
         });
     }
     
-    getProductById(someId) {
+    getProductById(products, someId) {
         let productMatch;
-        this.products.forEach(product => {
+        products.forEach(product => {
             if (someId === product.id) {
                 productMatch = product;
             }

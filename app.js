@@ -9,7 +9,9 @@ const productRadioTags = document.querySelectorAll('input');
 const choiceContainer = document.getElementById('product-choice-container');
 const nextContainer = document.getElementById('next-container');
 const nextButton = document.getElementById('next-button');
+
 const products = new ProductData(productData);
+
 let randomProduct1 = products.getRandomProducts();
 let randomProduct2 = products.getRandomProducts(); 
 let randomProduct3 = products.getRandomProducts();
@@ -69,16 +71,69 @@ productRadioTags.forEach((radioTag, i) => {
         radioTag.value = randomProduct1.id;
         radioTag.addEventListener('click', (event) => {
             const radioValue = event.target.value;
+            let productItem = products.getProductById(clickArray, radioValue);
+            if (!productItem) {
+                productItem = {
+                    id: radioValue,
+                    totalClicks: 1
+                };
+                
+                clickArray.push(productItem);
+            }
+            else {
+                productItem.totalClicks++;
+            }
+            console.log(clickArray);
         });
     } else if (i === 1) {
         radioTag.value = randomProduct2.id;
         radioTag.addEventListener('click', (event) => {
             const radioValue = event.target.value;
+            let productItem = products.getProductById(clickArray, radioValue);
+            if (!productItem) {
+                productItem = {
+                    id: radioValue,
+                    totalClicks: 1
+                };
+                
+                clickArray.push(productItem);
+            }
+            else {
+                productItem.totalClicks++;
+            }
+            console.log(clickArray);
         });
     } else if (i === 2) {
         radioTag.value = randomProduct3.id;
         radioTag.addEventListener('click', (event) => {
             const radioValue = event.target.value;
+            let productItem = products.getProductById(clickArray, radioValue);
+            if (!productItem) {
+                productItem = {
+                    id: radioValue,
+                    totalClicks: 1
+                };
+                
+                clickArray.push(productItem);
+            }
+            else {
+                productItem.totalClicks++;
+            }
+            console.log(clickArray);    
         });
     }
 });
+const button = document.createElement('button');
+// button.id = products.id;
+button.textContent = 'Next Selection';
+button.addEventListener('click', () => {
+
+
+    
+    localStorage.setItem('productArray', JSON.stringify(clickArray));
+
+        // alert('1 ' + instrument.name + ' added to cart');
+});  
+    
+clickArray.push(totalClicks);
+
