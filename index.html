@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>BusMall</title>
+</head>
+
+<body>
+    <header>
+        <h1>BusMall</h1>
+    </header>
+
+    <main>
+        <section id="display">
+            <h2 id="product-name"></h2>
+            <div id="product-choice-container">
+                <label class=randomProduct>
+                    <input type="radio" name="product" value="">
+                    <img id=img-1 src="">
+                </label>
+                <label class=randomProduct2>
+                    <input type="radio" name="product" value="">
+                    <img id=img-2 src="">
+                </label>
+                <label class=randomProduct3>
+                    <input type="radio" name="product" value="">
+                    <img id=img-3 src="">
+                </label>
+            </div>
+            <p id="next-container" class="hidden">
+                <button id="next-button">Next Selection</button>
+            </p>
+            <section id="results-section" class="hidden">
+            <!-- <h2>Results</h2>
+                    <h2>Misidentifications</h2>
+                    <ul id="mistakes-list"></ul>
+                </section> -->
+            </main>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
